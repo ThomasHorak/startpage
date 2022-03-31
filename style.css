@@ -1,0 +1,185 @@
+html,
+body {
+    background: #000000;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+#txt {
+    text-align: right;
+    color: rgba(255,255,255,0.5);
+    font-family: "Roboto Light", monospace;
+    font-size: 96pt;
+    cursor: default;
+    height: 96px;
+    right: 0;
+    line-height: 96px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    position: fixed;
+    bottom: 48px;
+    z-index: 12;
+}
+
+#menu {
+    cursor: default;
+    height: 48px;
+    left: 0;
+    line-height: 48px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+#menu,
+#q,
+#rss {
+    background: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.75);
+    font-family: "Roboto Light", "Liberation Sans", "Dejavu Sans", "Droid Sans", monospace;
+    font-size: 24pt;
+}
+
+#menu a,
+#menu a:link,
+#menu a:visited {
+    color: rgba(255,255,255,0.75);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menu a:active,
+#menu a:hover {
+    color: #ffffff;
+}
+
+#menu label {
+    padding: 0 10px;
+}
+
+#menu ul {
+    display: inline-table;
+    list-style: none;
+    position: relative;
+}
+
+#menu ul li {
+    float: left;
+    transition: all .1s ease-out 0s;
+}
+
+#menu ul li:hover {
+    background: #000000;
+	color: #ffffff;
+}
+
+#menu ul li:hover > ul {
+    display: block;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+#menu ul ul {
+    background: rgba(0,0,0,0.5);
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100px;
+}
+
+#menu ul ul li {
+    width: 100%;
+}
+
+#menu ul ul li:hover {
+    background: rgba(135,192,88,0.75);
+}
+
+#menu #q {
+    background: transparent;
+    border: 0;
+    border-left: 4px solid transparent;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 6px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all .1s ease-out 0s;
+    width: 360px;
+}
+
+#menu #q:focus {
+    background: rgba(0,0,0,0.75);
+    border-left: 4px solid rgba(135,192,88,0.75);
+}
+
+#rss {
+    bottom: 0;
+    height: 48px;
+    left: 0;
+    line-height: 48px;
+    min-width: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: auto;
+    z-index: 10;
+}
+
+#rss a {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#rss a:active ,
+#rss a:hover {
+    color: #ffffff;
+}
+
+#rss a:link,
+#rss a:visited {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+}
+
+#rss #content {
+    background: transparent;
+    height: auto;
+    left: 100%;
+    position: relative;
+    top: 0;
+    white-space: nowrap;
+    width: auto;
+}
+
+#wallpaper {
+    background: url("Kadae and Octavia (big) by H1KKAGE.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}

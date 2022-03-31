@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" language="javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript" language="javascript" src="page.js"></script>
+</head>
+
+<body onload="javascript:init();">
+    <div id="menu">
+        <ul id="mnu"></ul>
+        <input id="q" type="text" value="" placeholder="Search" onkeypress="javascript:handleQuery(event,this.value);" />
+    </div>
+    <div id="txt">
+    </div>
+    <div id="rss">
+        <div id="content" onmouseover="javascript:pause=true;" onmouseout="javascript:pause=false;"></div>
+    </div>
+    <div id="wallpaper"></div>
+</body>
+
+</html>
