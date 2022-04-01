@@ -34,7 +34,7 @@ var links = [
     ["YouTube", "http://www.youtube.com/feed/subscriptions"],
     ["", ""],
     ["/g/ - Technology", "http://boards.4chan.org/g/"],
-    ["/mlp/ - My Little Pony", "http://boards.4chan.org/mlp/"],
+    ["/mlp/ - MLP", "http://boards.4chan.org/mlp/"],
     ["Kiwi Farms", "https://kiwifarms.net/"],
     ["Minecraft Forum", "http://www.minecraftforum.net/members/The_Barinade"],
     ["MLP Forums", "https://mlpforums.com/"],
@@ -49,13 +49,14 @@ var links = [
     ["Twitch", "https://www.twitch.tv/directory/following"],
     ["Wordle", "https://www.nytimes.com/games/wordle/index.html"],
     ["", ""],
-    ["osu! Beatmap Listing", "https://osu.ppy.sh/beatmapsets"],
+    ["osu! Beatmaps", "https://osu.ppy.sh/beatmapsets"],
     ["osu!Skills", "http://osuskills.com/user/Kadae"],
     ["osu!snipe", "https://snipe.huismetbenen.nl/rankings/au/osu/count"],
     ["osu!Stats", "https://osustats.ppy.sh/u/Kadae//1/////-/"],
     ["osu!track", "https://ameobea.me/osutrack/user/kadae/"],
     ["", ""],
     ["Drive", "https://drive.google.com/"],
+    ["GitHub", "https://github.com/FutaPony"],
     ["Gmail", "http://mail.google.com/mail/u/0/#inbox"],
     ["Imgur", "http://theb.imgur.com/all/"],
     ["LinkedIn", "http://www.linkedin.com/in/thomas-horak-425a9813b/"],
@@ -79,12 +80,12 @@ var links = [
     ["Streamlabs", "https://streamlabs.com/dashboard#/stats"],
     ["", ""],
     ["Outlook", "https://outlook.office365.com/mail/"],
+    ["Timesheets", "https://fdmgroup.my.salesforce.com/"],
 ];
 var ss = "";
 
 function init() {
     startTime ();
-
     for (var i = 0; i < search.length; i++) {
         if (search[i][0] == "") {
             ss = search[i][1];
@@ -117,7 +118,7 @@ function startTime() {
 }
 
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i < 10) {i = "0" + i};  // Add zero in front of numbers < 10
     return i;
 }
 
